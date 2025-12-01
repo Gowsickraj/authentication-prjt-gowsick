@@ -19,7 +19,6 @@ const Login = ({ setUser }) => {
         try {
             const res = await axios.post("/api/users/login", formData)
             localStorage.setItem("token", res.data.token)
-            console.log(res.data, "User Data========>");
             setUser(res.data)
             navigate("/")
         } catch (err) {

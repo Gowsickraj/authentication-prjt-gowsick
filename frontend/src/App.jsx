@@ -11,7 +11,6 @@ const App = () => {
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(true)
 
-  console.log(user, "users");
 
 
   useEffect(() => {
